@@ -12,7 +12,7 @@ export default defineConfig({
     preprocessorOptions:{
       less:{
         modifyVars:{
-          hack:`true @import "${resolve(__dirname,'src/assets/style/style.less')}"`
+          hack:`true; @import (reference) "${resolve(__dirname,'src/assets/style/style.less')}";`
         },
         javascriptEnable:true
       }
